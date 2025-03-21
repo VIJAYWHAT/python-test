@@ -2,7 +2,7 @@
 from flask import Flask, render_template
 
 
-app = Flask(__name__, template_folder='templates', static_folder='static') # Specify the template folder
+app = Flask(__name__, static_folder='static') # Specify the template folder
 
 @app.route('/')
 def home():
